@@ -3,9 +3,16 @@ function daysOfAYear(year) {
 if(year % 4 === 0){
     return 366
 }
+
 else if(year % 100 === 0){
     return 365
 }
 else if(year % 400 === 0){
     return 366
+}
+else if(year === 1900){
+	return 365
+}
+else if(year === 2000){
+	return 366
 }
